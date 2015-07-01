@@ -10,8 +10,8 @@
 
 	<link rel="stylesheet" href="style.css">
 	<!--See footer for the Google Hosted Libraries link.-->
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-
+<!-- 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+ -->
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -19,15 +19,39 @@
 <body onload="">
 	<h2 id="title" class="title"></h2>
 	<p class="sub">Page is loaded if you see this message.</p>
-	<button id="toby">Rock</button>
-	<button id="shifu">Paper</button>
-	<button id="collar">Scissors</button>
+	<div class="none">
+		<button onclick="rock()">Rock</button>
+		<button onclick="paper()">Paper</button>
+		<button onclick="sciz()">Scissors</button>
+		<button onclick="spock()">Spock</button>
+		<button onclick="lizard()">Lizard</button>
+	</div>
+	<div>
+		User won: <div id="htmlUserStats"></div><br />
+		Computer won: <div id="htmlComputerStats"></div><br />
+		There was a tie: <div id="htmlTieStats"></div><br />
+		<button id="reset" onclick="reset()">Reset Stats</button>
+	</div>
+	<div class="right bob none">
+		Result: <div id="result"></div>
+		<p><img src="" alt="" id="pic3" width="20%" height="20%"></p>
+	</div>
+	<div class="bob none">
+		You chose: <div id="pen"></div>
+		<p><img src="" alt="" id="pic1" width="20%" height="20%"></p>
+	</div>
+	<div class="bob none">
+		Computer chose: <div id="pasqua"></div>
+		<p><img src="" alt="" id="pic2" width="20%" height="20%"></p>
+	</div>
 
 <footer>
 	<!-- Google CDN: https://developers.google.com/speed/libraries/ -->
+	<!--
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	-->
 
 	<!-- My code. -->
 	<script src="script.js"></script>
